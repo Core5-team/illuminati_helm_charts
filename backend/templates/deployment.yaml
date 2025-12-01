@@ -59,7 +59,7 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: db-secrets
-                key: dbname
+                key: databaseName
           - name: DATABASE_USER
             valueFrom:
               secretKeyRef:
