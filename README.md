@@ -55,3 +55,5 @@ Each chart defines:
 4. Sync the Application to deploy.
 
 For examples and predefined ArgoCD Applications, see the [Illuminati ArgoCD repository](https://github.com/Core5-team/illuminati_gitops).
+
+
