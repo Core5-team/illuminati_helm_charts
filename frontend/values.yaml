@@ -1,6 +1,6 @@
 maxSurge:       25%
 maxUnavailable: 25%
-containerRepo: 896015496924.dkr.ecr.us-east-1.amazonaws.com/frontend_stage
+containerRepo: 896015496924.dkr.ecr.us-east-1.amazonaws.com/frontend
 buildVersion: 1.0.28
 cpuRequests: 100m
 memoryRequests: 128Mi
