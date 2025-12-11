@@ -1,7 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: 195443952464.dkr.ecr.us-east-1.amazonaws.com/illuminati/email-service
+  #Use your ECR or Docker Hub image
+  repository: myrepo/illuminati-email-service-example
   tag: "latest"
   pullPolicy: IfNotPresent
 
@@ -11,10 +12,11 @@ service:
 
 smtp:
   host: smtp.gmail.com
-  port: "587"
-  user: vandrvi2325@gmail.com
-  password: "pnnk jclo gidr gikq"
-  from: vandrvi2325@gmail.com
+  port: "587" 
+  # Use your gmail accsess credentials
+  user: example@gmail.com
+  password: "app-password-example"
+  from: example@gmail.com
 
 resources:
   requests:
