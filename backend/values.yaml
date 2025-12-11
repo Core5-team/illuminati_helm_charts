@@ -1,7 +1,7 @@
 maxSurge:       25%
 maxUnavailable: 25%
-containerRepo: 896015496924.dkr.ecr.us-east-1.amazonaws.com/backend
-buildVersion: 1.0.3
+containerRepo: 195443952464.dkr.ecr.us-east-1.amazonaws.com/illuminati/backend
+buildVersion: v1.0.2
 cpuRequests: 100m
 memoryRequests: 128Mi
 cpuLimit: 200m

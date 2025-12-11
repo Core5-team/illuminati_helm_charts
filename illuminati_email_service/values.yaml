@@ -1,0 +1,31 @@
+replicaCount: 1
+
+image:
+  repository: 195443952464.dkr.ecr.us-east-1.amazonaws.com/illuminati/email-service
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+service:
+  port: 80
+  targetPort: 8080
+
+smtp:
+  host: smtp.gmail.com
+  port: "587"
+  user: vandrvi2325@gmail.com
+  password: "pnnk jclo gidr gikq"
+  from: vandrvi2325@gmail.com
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 250m
+    memory: 256Mi
+
+hpa:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 5
+  targetCPU: 70

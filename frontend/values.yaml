@@ -1,7 +1,7 @@
 maxSurge:       25%
 maxUnavailable: 25%
-containerRepo: 896015496924.dkr.ecr.us-east-1.amazonaws.com/frontend
-buildVersion: 1.0.28
+containerRepo: 195443952464.dkr.ecr.us-east-1.amazonaws.com/illuminati/frontend
+buildVersion: latest
 cpuRequests: 100m
 memoryRequests: 128Mi
 cpuLimit: 200m
@@ -12,4 +12,13 @@ minReplicas: 1
 maxReplicas: 20
 cpuAverageUtilization: 70
 memoryAverageUtilization: 70
-dnsZones: door-store-moldova.pp.ua
+dnsZones: illuminati-core5.pp.ua
+
+
+ingress:
+  enabled: true
+  host: illuminati-core5.pp.ua
+  http:
+    paths:
+      - path: /
+        pathType: Prefix
