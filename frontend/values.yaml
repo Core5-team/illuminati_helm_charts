@@ -1,7 +1,8 @@
 maxSurge:       25%
 maxUnavailable: 25%
-containerRepo: 195443952464.dkr.ecr.us-east-1.amazonaws.com/illuminati/frontend
-buildVersion: latest
+#Use your ECR or Docker Hub image
+containerRepo: myrepo/illuminati-frontend-example
+buildVersion: v1.0.1
 cpuRequests: 100m
 memoryRequests: 128Mi
 cpuLimit: 200m

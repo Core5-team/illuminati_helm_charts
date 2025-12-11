@@ -27,7 +27,7 @@ spec:
         version: "1"
       name: backend
     spec:
-      serviceAccountName: {{ .Values.serviceAccount.name }}
+      serviceAccountName: default
       containers:
       - name: backend
         image: {{.Values.containerRepo}}:{{.Values.buildVersion}}

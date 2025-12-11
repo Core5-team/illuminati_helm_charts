@@ -1,0 +1,16 @@
+apiVersion: elbv2.k8s.aws/v1beta1
+kind: IngressClassParams
+metadata:
+  name: alb
+  labels:
+    app: frontend
+spec:
+  scheme: internet-facing
+  ipAddressType: ipv4
+  group:
+    name: illuminati
+  tags:
+    - key: Environment
+      value: dev
+    - key: Application
+      value: frontend
