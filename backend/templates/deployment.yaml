@@ -78,4 +78,14 @@ spec:
                 key: port
           - name: SECRET_KEY
             value : test
+          - name: AWS_S3_BUCKET_NAME
+            valueFrom:
+              secretKeyRef:
+                name: s3-config
+                key: AWS_S3_BUCKET_NAME
+          - name: AWS_S3_REGION
+            valueFrom:
+              secretKeyRef:
+                name: s3-config
+                key: AWS_S3_REGION
 status: {}
